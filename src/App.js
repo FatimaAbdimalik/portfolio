@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects.js";
 import Contact from "./components/Contact/Contact.js";
 import Footer from "./components/Footer/Footer.js";
 import "./App.css";
+import "./index.css";
 function App() {
   return (
     <div className="App">

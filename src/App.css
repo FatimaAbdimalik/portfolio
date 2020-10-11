@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+
+@font-face {
+  font-family: "Chilanka", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+}
 .content {
   min-height: 100%;
 }
