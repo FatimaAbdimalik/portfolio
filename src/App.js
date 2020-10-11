@@ -33,7 +33,6 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <Footer />
       <div>
         <audio autoPlay>
           <source src="moonlight-movement1.mp3" type="audio/mp3" />

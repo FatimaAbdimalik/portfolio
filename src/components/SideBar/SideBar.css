@@ -7,6 +7,8 @@
 .list_style {
   margin-top: 2rem;
   text-align: center;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
 }
 li.list_style > a {
   text-decoration: none;

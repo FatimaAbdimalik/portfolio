@@ -1,6 +1,5 @@
 import React from "react";
 import SideBar from "../SideBar/SideBar.js";
-import Footer from "../Footer/Footer.js";
 import "./Home.css";
 const Home = () => {
   return (
