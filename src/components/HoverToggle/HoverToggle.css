@@ -1,0 +1,8 @@
+.wrapper:hover .text {
+  display: block;
+}
+
+.text,
+.wrapper:hover .icon {
+  display: none;
+}
