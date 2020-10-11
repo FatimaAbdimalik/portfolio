@@ -1,7 +1,7 @@
 .side-bar {
   list-style: none;
   margin-top: 2rem;
-  margin-right: 2.5rem;
+  margin-right: 3rem;
 }
 
 .list_style {
@@ -17,5 +17,6 @@ li.list_style > a {
 .background_colour {
   display: flex;
   flex-direction: column;
-  /* background-color: darkgrey; */
+  background-color: #383838;
+  height: 100vh;
 }
