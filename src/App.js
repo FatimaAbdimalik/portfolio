@@ -2,6 +2,7 @@ import React from "react";
 // import logo from "./logo.svg";
 import Home from "./components/Home/Home.js";
 import SideBar from "./components/SideBar/SideBar.js";
+import Footer from "./components/Footer/Footer.js";
 // import "./App.css";
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
       <Home />
       <SideBar />
+      <Footer />
     </div>
   );
 }
