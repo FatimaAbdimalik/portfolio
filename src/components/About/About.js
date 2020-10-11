@@ -7,7 +7,6 @@ const About = () => {
     <div>
       <div className="position">
         <SideBar />
-
         <div className="intro">
           <h1>About Me</h1>
         </div>

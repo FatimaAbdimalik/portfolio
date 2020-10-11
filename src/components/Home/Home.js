@@ -7,10 +7,11 @@ const Home = () => {
     <div>
       <div className="position">
         <SideBar />
-      </div>
-      <div className="intro">
-        <h1>Hi</h1>
-        <h1>My name is Fatima</h1>
+        <div className="intro">
+          <h1>Hi</h1>
+          <h1>My name is Fatima</h1>
+          <h1>A Full Stack Developer</h1>
+        </div>
       </div>
     </div>
   );

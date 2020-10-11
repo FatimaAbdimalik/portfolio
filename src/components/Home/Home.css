@@ -11,4 +11,11 @@
 
 .position {
   display: flex;
+  margin-right: 3rem;
+}
+
+body {
+  background-color: #484848;
+  color: white;
+  height: 100%;
 }

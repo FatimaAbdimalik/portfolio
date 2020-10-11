@@ -15,5 +15,5 @@ li.list_style > a {
 .background_colour {
   display: flex;
   flex-direction: column;
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
 }

@@ -6,3 +6,11 @@
 .wrapper:hover .icon {
   display: none;
 }
+.icon,
+.text {
+  color: white;
+}
+
+.text {
+  font-size: 13px;
+}
