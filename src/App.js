@@ -1,6 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter,
+} from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./components/Home/Home.js";
 import About from "./components/About/About.js";
 import Skills from "./components/Skills/Skills.js";
@@ -11,29 +17,40 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      {/* <CSSTransition in={loading} timeout={400} classNames="fade" unmountOnExit>
-  <Loader />
- </CSSTransition> */}
       <Router>
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/skills">
-              <Skills />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
-        </div>
+        <Route
+          render={({ location }) => {
+            return (
+              <TransitionGroup component={null}>
+                <CSSTransition
+                  timeout={300}
+                  classNames="page"
+                  key={location.key}
+                >
+                  <div className="content">
+                    <Switch>
+                      <Route exact path="/">
+                        <Home />
+                      </Route>
+                      <Route path="/about">
+                        <About />
+                      </Route>
+                      <Route path="/skills">
+                        <Skills />
+                      </Route>
+                      <Route path="/projects">
+                        <Projects />
+                      </Route>
+                      <Route path="/contact">
+                        <Contact />
+                      </Route>
+                    </Switch>
+                  </div>
+                </CSSTransition>
+              </TransitionGroup>
+            );
+          }}
+        />
       </Router>
       <div>
         <audio autoPlay>
