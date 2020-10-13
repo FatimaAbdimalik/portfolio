@@ -23,7 +23,7 @@ function App() {
             return (
               <TransitionGroup component={null}>
                 <CSSTransition
-                  timeout={300}
+                  timeout={500}
                   classNames="page"
                   key={location.key}
                 >
