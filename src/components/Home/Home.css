@@ -24,3 +24,6 @@ h1 {
   font-family: "Chilanka";
   font-size: 3rem;
 }
+.side-by-side {
+  display: flex;
+}
