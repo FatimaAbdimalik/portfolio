@@ -1,17 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Home/Home.css";
 import "./About.css";
 import SideBar from "../SideBar/SideBar";
+import { Button, Modal } from "react-bootstrap";
 
 const About = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    return setShow(false);
+  };
+  const handleShow = () => {
+    return setShow(true);
+  };
+
   return (
     <div>
       <div className="position">
-        <SideBar />
+        {/* <SideBar /> */}
         <div className="intro">
           <div className="side-by-side">
             <div>
               <h1>About Me</h1>
+              <Button variant="primary" onClick={handleShow}>
+                Career Timeline
+              </Button>
+              <Modal
+                show={show}
+                onHide={handleClose}
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+              >
+                <div className="background">
+                  <Modal.Header closeButton>
+                    <Modal.Title>Jobs Timeline</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <div className="timeline">
+                      <div className="container left">
+                        <div className="content">
+                          <h2>Feb 2020 - Oct 2020</h2>
+                          <p>Software Trainee at CYF.</p>
+                        </div>
+                      </div>
+                      <div className="container right">
+                        <div className="content">
+                          <h2>Mar 2020 - July 2020</h2>
+                          <p>Software Developer at Tech Returners</p>
+                        </div>
+                      </div>
+                      <div className="container left">
+                        <div className="content">
+                          <h2>Aug 2018 - Present</h2>
+                          <p>Private Tutor.</p>
+                        </div>
+                      </div>
+                      <div className="container right">
+                        <div className="content">
+                          <h2>Sep 2015 - July 2020</h2>
+                          <p>Teaching Assistant</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                      Close
+                    </Button>
+                  </Modal.Footer>
+                </div>
+              </Modal>
               <p>I am a passionat and committed person.</p>
               <p>
                 A proactive, resourceful probelm solver and thrives on
@@ -23,7 +81,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <div class="timeline">
+              {/* <div class="timeline">
                 <div class="container left">
                   <div class="content">
                     <h2>Feb 2020 - Oct 2020</h2>
@@ -48,7 +106,7 @@ const About = () => {
                     <p>Teaching Assistant</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

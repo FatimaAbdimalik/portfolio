@@ -5,7 +5,7 @@ import SideBar from "../SideBar/SideBar";
 const Skills = () => {
   return (
     <div className="position">
-      <SideBar />
+      {/* <SideBar /> */}
       <div>
         <div className="intro">
           <h1>Skills</h1>

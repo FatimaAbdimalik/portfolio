@@ -1,14 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Form } from "react-bootstrap";
+import axios from "axios";
+const Contact = ({ baseUrl }) => {
+  const [value, setValue] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const handleClick = () => {
+    axios
+      .post(`${baseUrl}/employers`, {
+        name: value.name,
+        email: value.email,
+        subject: value.subject,
+        message: value.message,
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    alert("You've sent your message. Thank you");
+  };
 
-const Contact = () => {
+  const handleFieldChange = (e) => {
+    const updateField = {
+      ...value,
+      [e.target.name]: e.target.value,
+    };
+    setValue(updateField);
+    // console.log(value);
+  };
+
   return (
     <div>
       <div className="position">
-        <div>
-          <SideBar />
-        </div>
+        <div>{/* <SideBar /> */}</div>
         <div className="intro">
           <div>
             <h1>Contact Me</h1>
@@ -19,25 +49,37 @@ const Contact = () => {
               type="text"
               name="name"
               className="input_field"
+              value={value.name}
+              onChange={handleFieldChange}
             />
             <input
               placeholder="Email"
               type="text"
               name="email"
+              value={value.email}
               className="input_field"
+              onChange={handleFieldChange}
             />
             <br />
             <input
               placeholder="Subject"
               type="text"
               name="subject"
+              value={value.subject}
               className="subject-field"
+              onChange={handleFieldChange}
             />
             <br />
-            <textarea name="message" rows="4" cols="50" />
+            <textarea
+              name="message"
+              value={value.message}
+              rows="4"
+              cols="50"
+              onChange={handleFieldChange}
+            />
           </div>
           <div>
-            <button>SEND</button>
+            <button onClick={handleClick}>SEND</button>
           </div>
           {/* <Form>
             <Form.Group controlId="name">
