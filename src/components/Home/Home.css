@@ -1,5 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Piedra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
 .intro {
   margin-top: 5rem;
   margin-left: 12rem;
@@ -7,8 +8,9 @@
 
 .input_field {
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-right: 2rem;
+  margin-bottom: 5px;
+  /* margin-right: 2rem; */
+  width: 12.6rem;
 }
 
 .position {
@@ -23,8 +25,8 @@ body {
 }
 
 h1 {
-  font-family: "Chilanka";
   font-size: 3rem;
+  font-family: "Sansita Swashed", cursive;
 }
 .side-by-side {
   display: flex;
@@ -32,8 +34,43 @@ h1 {
 
 p {
   font-family: "Chilanka", cursive;
+  perspective: 900px;
 }
 
-h1 {
+h2 {
+  font-family: "Great Vibes", cursive;
   font-family: "Piedra", cursive;
+}
+
+.char {
+  offset-path: path(
+    "M.5 122.7s24.7-275 276.9 0c327.1 356.7 266.1-330.3 548-33.3 256.9 270.7 271.1 0 271.1 0"
+  );
+  offset-distance: calc(var(--char-index) * 1.75rem);
+  position: absolute;
+  animation: wave 2200ms cubic-bezier(0.62, 0.01, 0.42, 1.01) infinite alternate
+      calc(var(--char-index) * 20ms),
+    wave2 2200ms cubic-bezier(0.62, 0.01, 0.42, 1.01) infinite alternate
+      calc(var(--char-index) * 20ms);
+  transform: perspective(800px) scale(1) rotate3d(0, 0, 0, 0);
+}
+
+@keyframes wave {
+  100% {
+    offset-distance: calc((var(--char-index) * 3rem) + 300px);
+    transform: perspective(800px) scale(1.25) rotate3d(1, 0, 0, 180deg);
+    color: red;
+  }
+}
+
+@keyframes wave2 {
+  100% {
+    offset-distance: calc((var(--char-index) * 3.45rem) + 600px);
+    transform: perspective(800px) scale(1.75) rotate3d(1, 0, 0, 360deg);
+    color: goldenrod;
+  }
+}
+.subject-field {
+  width: 25.9rem;
+  margin-bottom: 5px;
 }
