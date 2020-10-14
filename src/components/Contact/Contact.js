@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import SideBar from "../SideBar/SideBar";
-import { Form } from "react-bootstrap";
 import axios from "axios";
 const Contact = ({ baseUrl }) => {
   const [value, setValue] = useState({

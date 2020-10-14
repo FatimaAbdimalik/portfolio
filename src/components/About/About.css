@@ -21,8 +21,8 @@
   position: relative;
   background-color: inherit;
   width: 50%;
-} */
-/* 
+}
+
 .container::after {
   content: "";
   position: absolute;
@@ -73,10 +73,10 @@
 }
 
 .content {
-  padding: 20px 30px; */
-/* max-width: 5rem; */
-/* border: 2px solid black; */
-/* background-color: white; */
-/* position: relative;
+  padding: 20px 30px;
+  max-width: 5rem;
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
   border-radius: 6px;
-/* } */
+} */
