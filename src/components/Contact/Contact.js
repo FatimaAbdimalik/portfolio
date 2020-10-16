@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import axios from "axios";
 const Contact = ({ baseUrl }) => {
   const [value, setValue] = useState({
@@ -35,7 +36,7 @@ const Contact = ({ baseUrl }) => {
 
   return (
     <div>
-      <div className="position">
+      <div>
         <div>{/* <SideBar /> */}</div>
         <div className="intro">
           <div>
@@ -77,7 +78,13 @@ const Contact = ({ baseUrl }) => {
             />
           </div>
           <div>
-            <button onClick={handleClick}>SEND</button>
+            <Button
+              onClick={handleClick}
+              variant="secondary"
+              style={{ backgroundColor: "black" }}
+            >
+              SEND
+            </Button>
           </div>
           {/* <Form>
             <Form.Group controlId="name">

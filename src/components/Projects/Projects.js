@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ProjectCards from "../ProjectCards/ProjectCards";
 import "../Home/Home.css";
 // import repos from "../../repos.json";
 
@@ -15,11 +16,10 @@ const Projects = () => {
   console.log(data);
   return (
     <div>
-      <div className="position">
-        <div className="intro">
-          <h1>Projects</h1>
-        </div>
+      <div className="intro">
+        <h1>Projects</h1>
       </div>
+      <ProjectCards data={data} />
     </div>
   );
 };

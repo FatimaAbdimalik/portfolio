@@ -16,6 +16,7 @@
 .position {
   display: flex;
   margin-right: 3rem;
+  height: 100%;
 }
 
 body {

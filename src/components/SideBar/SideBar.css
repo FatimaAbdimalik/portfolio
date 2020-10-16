@@ -16,6 +16,7 @@ li.list_style > a {
 
 .background_colour {
   display: flex;
+  height: 100%;
   flex-direction: column;
   background-color: #383838;
   height: 100vh;

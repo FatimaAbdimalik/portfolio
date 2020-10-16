@@ -15,12 +15,20 @@ const About = () => {
 
   return (
     <div>
-      <div className="position">
+      <div>
         <div className="intro">
           <div className="side-by-side">
             <div>
               <h1>About Me</h1>
-              <Button variant="secondary" onClick={handleShow}>
+              <Button
+                variant="secondary"
+                onClick={handleShow}
+                style={{
+                  backgroundColor: "black",
+                  marginTop: "1rem",
+                  marginBottom: "1rem",
+                }}
+              >
                 Career Timeline
               </Button>
               <Modal
@@ -62,7 +70,11 @@ const About = () => {
                     </div>
                   </Modal.Body>
                   <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button
+                      variant="secondary"
+                      onClick={handleClose}
+                      style={{ backgroundColor: "black" }}
+                    >
                       Close
                     </Button>
                   </Modal.Footer>
