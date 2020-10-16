@@ -80,3 +80,20 @@ h2 {
   background-color: white;
   color: black;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.intro_project {
+  margin-left: 14rem;
+}
+
+h4 {
+  font-family: "Chilanka", cursive;
+  font-weight: bold;
+}
