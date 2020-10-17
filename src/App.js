@@ -30,7 +30,7 @@ function App() {
                   >
                     <div className="content" style={{ overflow: "scroll" }}>
                       <Switch>
-                        <Route exact path="/">
+                        <Route exact path="/portfolio">
                           <Home />
                         </Route>
                         <Route path="/about">

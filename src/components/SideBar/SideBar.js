@@ -16,7 +16,7 @@ const SideBar = () => {
     <div className="background_colour">
       <ul className="side-bar">
         <li className="list_style">
-          <Link to="/">
+          <Link to="/portfolio">
             <HoverToggle
               icons={<BsFillHouseDoorFill size="1.5rem" />}
               text="HOME"
