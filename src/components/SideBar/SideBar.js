@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import HoverToggle from "../HoverToggle/HoverToggle";

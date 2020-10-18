@@ -8,7 +8,7 @@ const Projects = () => {
 
   useEffect(() => {
     fetch(
-      "https://gist.githubusercontent.com/FatimaAbdimalik/56f9e2950bcb073f09134b576d21f2e5/raw/1333f66f87a6ceded1396d34e5b22bb4810dea53/repos.json"
+      "https://gist.githubusercontent.com/FatimaAbdimalik/602cd67df9cb1dd38a9c071f18f6a2e4/raw/b4d52a7819788bfccb14448b67ab6023b13d090e/impor_repos.json"
     )
       .then((res) => res.json())
       .then((data) => setData(data));

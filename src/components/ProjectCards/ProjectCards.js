@@ -19,9 +19,12 @@ const ProjectCards = ({ data }) => {
               >
                 <Card.Body style={{ color: "black" }}>
                   <Card.Title>{cardDetails.name}</Card.Title>
-                  <Card.Text>{cardDetails.url}</Card.Text>
+                  <Card.Text>
+                    <h2> {cardDetails.type} </h2>
+                    {cardDetails.technologies}
+                  </Card.Text>
                   <Card.Link href={cardDetails.url}>Code</Card.Link>
-                  <Card.Link href="#">Live app</Card.Link>
+                  <Card.Link href={cardDetails.live}>Live app</Card.Link>
                 </Card.Body>
               </Card>
             );
