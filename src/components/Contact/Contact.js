@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import axios from "axios";
 const Contact = ({ baseUrl }) => {
   const [value, setValue] = useState({
@@ -37,69 +37,57 @@ const Contact = ({ baseUrl }) => {
   return (
     <div>
       <div>
-        <div>{/* <SideBar /> */}</div>
         <div className="intro">
           <div>
             <h1>Contact Me</h1>
           </div>
           <div>
-            <input
-              placeholder="Name"
-              type="text"
-              name="name"
-              className="input_field"
-              value={value.name}
-              onChange={handleFieldChange}
-            />
-            <input
-              placeholder="Email"
-              type="text"
-              name="email"
-              value={value.email}
-              className="input_field"
-              onChange={handleFieldChange}
-            />
-            <br />
-            <input
-              placeholder="Subject"
-              type="text"
-              name="subject"
-              value={value.subject}
-              className="subject-field"
-              onChange={handleFieldChange}
-            />
-            <br />
-            <textarea
-              name="message"
-              value={value.message}
-              rows="4"
-              cols="50"
-              onChange={handleFieldChange}
-            />
+            <Form>
+              <Form.Group controlId="name">
+                <Form.Control
+                  placeholder="Name"
+                  type="text"
+                  name="name"
+                  value={value.name}
+                  onChange={handleFieldChange}
+                />
+              </Form.Group>
+              <Form.Control
+                placeholder="Email"
+                type="text"
+                name="email"
+                value={value.email}
+                onChange={handleFieldChange}
+              />
+              <br />
+              <Form.Control
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                value={value.subject}
+                onChange={handleFieldChange}
+              />
+              <br />
+              <Form.Control
+                name="message"
+                placeholder="message"
+                value={value.message}
+                rows="4"
+                cols="50"
+                onChange={handleFieldChange}
+                as="textarea"
+              />
+            </Form>
           </div>
           <div>
             <Button
               onClick={handleClick}
               variant="secondary"
-              style={{ backgroundColor: "black" }}
+              style={{ backgroundColor: "black", marginTop: "1rem" }}
             >
               SEND
             </Button>
           </div>
-          {/* <Form>
-            <Form.Group controlId="name">
-              <Form.Control type="name" placeholder="name" />
-            </Form.Group>
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Control type="email" placeholder="name@example.com" />
-            </Form.Group>
-            <Form.Group controlId="subject">
-              <Form.Control type="subject" placeholder="subject" />
-            </Form.Group>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows="3" col="5" />
-            </Form.Group>
-          </Form> */}
         </div>
       </div>
     </div>
