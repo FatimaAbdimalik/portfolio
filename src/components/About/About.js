@@ -29,7 +29,7 @@ const About = () => {
                   marginBottom: "1rem",
                 }}
               >
-                Career Timeline
+                Resume{" "}
               </Button>
               <Modal
                 show={show}
@@ -39,30 +39,30 @@ const About = () => {
               >
                 <div className="background">
                   <Modal.Header closeButton>
-                    <Modal.Title>Jobs Timeline</Modal.Title>
+                    <Modal.Title>Employment/Work Experience</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
                     <div className="timeline">
                       <div className="container left">
-                        <div className="content">
+                        <div className="resume_container">
                           <h2>Feb 2020 - Oct 2020</h2>
                           <p>Software Trainee at CYF.</p>
                         </div>
                       </div>
                       <div className="container right">
-                        <div className="content">
+                        <div className="resume_container">
                           <h2>Mar 2020 - July 2020</h2>
                           <p>Software Developer at Tech Returners</p>
                         </div>
                       </div>
                       <div className="container left">
-                        <div className="content">
+                        <div className="resume_container">
                           <h2>Aug 2018 - Present</h2>
                           <p>Private Tutor.</p>
                         </div>
                       </div>
                       <div className="container right">
-                        <div className="content">
+                        <div className="resume_container">
                           <h2>Sep 2015 - July 2020</h2>
                           <p>Teaching Assistant</p>
                         </div>
