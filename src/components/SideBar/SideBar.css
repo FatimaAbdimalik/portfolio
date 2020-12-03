@@ -2,13 +2,14 @@
   list-style: none;
   margin-top: 2rem;
   margin-right: 3rem;
+  display: flex;
 }
 
 .list_style {
-  margin-top: 2rem;
   text-align: center;
   max-width: 1.5rem;
   max-height: 1.5rem;
+  margin-left: 5rem;
 }
 li.list_style > a {
   text-decoration: none;
@@ -16,8 +17,6 @@ li.list_style > a {
 
 .background_colour {
   display: flex;
-  height: 100%;
   flex-direction: column;
   background-color: #383838;
-  height: 100vh;
 }

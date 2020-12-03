@@ -15,8 +15,9 @@
 
 .position {
   display: flex;
-  margin-right: 3rem;
-  height: 100%;
+  flex-direction: column;
+  /* margin-right: 3rem; */
+  /* height: 100%; */
 }
 
 body {
