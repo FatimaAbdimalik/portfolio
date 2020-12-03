@@ -6,6 +6,10 @@
   margin-left: 12rem;
 }
 
+.intro_border {
+  border: 2px solid white;
+  padding: 5px 5px;
+}
 .input_field {
   margin-top: 1rem;
   margin-bottom: 5px;

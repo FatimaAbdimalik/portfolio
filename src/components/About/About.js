@@ -20,7 +20,7 @@ const About = () => {
           <div className="side-by-side">
             <div>
               <h1>About Me</h1>
-              <Button
+              {/* <Button
                 variant="secondary"
                 onClick={handleShow}
                 style={{
@@ -79,18 +79,27 @@ const About = () => {
                     </Button>
                   </Modal.Footer>
                 </div>
-              </Modal>
+              </Modal> */}
               <p>I am a passionat and committed person.</p>
               <p>
-                A proactive, resourceful probelm solver and thrives on
+                A proactive, resourceful probelm solver that thrives on
                 challenges{" "}
               </p>
               <p>
                 Enthusiastic, driven and keen to embark on a career as a
                 software developer.
               </p>
+              Please Click on{" "}
+              <a
+                href="https://drive.google.com/file/d/1EgSbDKGwFkMA75xhJP1zqyU-Q5B1HDZZ/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                this
+              </a>{" "}
+              to find my CV
+              {/* <a></a> */}
             </div>
-            <div></div>
           </div>
         </div>
       </div>
