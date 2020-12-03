@@ -50,6 +50,7 @@ const Contact = ({ baseUrl }) => {
                   name="name"
                   value={value.name}
                   onChange={handleFieldChange}
+                  className="input"
                 />
               </Form.Group>
               <Form.Control
@@ -72,8 +73,8 @@ const Contact = ({ baseUrl }) => {
                 name="message"
                 placeholder="message"
                 value={value.message}
-                rows="4"
-                cols="50"
+                // rows="4"
+                // cols="50"
                 onChange={handleFieldChange}
                 as="textarea"
               />

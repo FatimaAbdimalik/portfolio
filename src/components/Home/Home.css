@@ -10,9 +10,11 @@
   margin-top: 1rem;
   margin-bottom: 5px;
   /* margin-right: 2rem; */
-  width: 12.7rem;
+  width: 6rem;
 }
-
+.form-control {
+  width: 50%;
+}
 .position {
   display: flex;
   flex-direction: column;
