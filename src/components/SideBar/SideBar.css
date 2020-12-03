@@ -3,6 +3,7 @@
   margin-top: 2rem;
   margin-right: 3rem;
   display: flex;
+  margin-left: 18rem;
 }
 
 .list_style {
@@ -19,4 +20,20 @@ li.list_style > a {
   display: flex;
   flex-direction: column;
   background-color: #383838;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #383838;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.side-bar-footer {
+  list-style: none;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  display: flex;
+  margin-left: 25rem;
 }

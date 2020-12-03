@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact.js";
 import "./App.css";
 import "./index.css";
 import SideBar from "./components/SideBar/SideBar.js";
+import Footer from "./components/Footer/Footer.js";
 
 function App() {
   const baseUrl = "http://localhost:3200";
@@ -53,11 +54,15 @@ function App() {
             }}
           />
         </Router>
-        <div>
+
+        {/* <div>
           <audio autoPlay>
             <source src="moonlight-movement1.mp3" type="audio/mp3" />
           </audio>
-        </div>
+        </div> */}
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
