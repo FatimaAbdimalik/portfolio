@@ -28,7 +28,7 @@ function App() {
                     classNames="page"
                     key={location.key}
                   >
-                    <div className="content" style={{ overflow: "scroll" }}>
+                    <div className="content">
                       <Switch>
                         <Route exact path="/">
                           <Home />
