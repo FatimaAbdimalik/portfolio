@@ -3,7 +3,8 @@
   margin-top: 2rem;
   margin-right: 3rem;
   display: flex;
-  margin-left: 18rem;
+  /* margin-left: 18rem; */
+  justify-content: center;
 }
 
 .list_style {
