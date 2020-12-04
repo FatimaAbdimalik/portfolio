@@ -3,7 +3,6 @@
   margin-top: 2rem;
   margin-right: 3rem;
   display: flex;
-  /* margin-left: 18rem; */
   justify-content: center;
 }
 
@@ -36,5 +35,5 @@ li.list_style > a {
   margin-top: 2rem;
   margin-right: 3rem;
   display: flex;
-  margin-left: 25rem;
+  justify-content: center;
 }
