@@ -17,14 +17,31 @@ const ProjectCards = ({ data }) => {
                 }}
                 key={key}
               >
-                <Card.Body style={{ color: "black" }}>
+                <Card.Body
+                  style={{ color: "black", boxShadow: "5px 5px 5px 3px" }}
+                >
                   <Card.Title>{cardDetails.name}</Card.Title>
                   <Card.Text>
-                    <h2> {cardDetails.type} </h2>
-                    {cardDetails.technologies}
+                    <h2> {cardDetails.intro} </h2>
+                    <Card.Img variant="top" src={cardDetails.image} />
+                    {cardDetails.techStack}
                   </Card.Text>
-                  <Card.Link href={cardDetails.url}>Code</Card.Link>
-                  <Card.Link href={cardDetails.live}>Live app</Card.Link>
+                  <div style={{ display: "flex", alignItems: "flex-end" }}>
+                    <Card.Link
+                      href={cardDetails.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Code
+                    </Card.Link>
+                    <Card.Link
+                      href={cardDetails.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live app
+                    </Card.Link>
+                  </div>
                 </Card.Body>
               </Card>
             );

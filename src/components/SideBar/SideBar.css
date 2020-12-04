@@ -20,6 +20,9 @@ li.list_style > a {
   display: flex;
   flex-direction: column;
   background-color: #383838;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .footer {

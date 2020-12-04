@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Home/Home.css";
 import "./About.css";
-import { Button, Modal } from "react-bootstrap";
+// import { Button, Modal } from "react-bootstrap";
 
 const About = () => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => {
-    return setShow(false);
-  };
-  const handleShow = () => {
-    return setShow(true);
-  };
+  // const handleClose = () => {
+  //   return setShow(false);
+  // };
+  // const handleShow = () => {
+  //   return setShow(true);
+  // };
 
   return (
     <div>
