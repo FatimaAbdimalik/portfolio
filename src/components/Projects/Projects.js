@@ -24,7 +24,7 @@ const Projects = () => {
     {
       name: "Quote-Generator",
       intro:
-        "An application that generates a random quote and displays the quote and the quote author everytime a button in clicked",
+        "An application that generates a random quote and displays the quote and the quote author every time a button in clicked",
       image: QuoteGenerator,
       techStack: "ReactJs,CSS",
       live: "https://quote-generato-app.netlify.app/",
@@ -61,7 +61,7 @@ const Projects = () => {
     {
       name: "To-Do",
       intro:
-        "A simple application to assist users to be organised by adding chores",
+        "A simple application to assist users to create and organise tasks",
       image: Todo,
       techStack:
         "ReactJs, axios, MySQL, AWS Serverless Lambda,React Bootstrap, moment",

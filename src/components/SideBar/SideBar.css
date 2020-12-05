@@ -1,7 +1,7 @@
 .side-bar {
   list-style: none;
-  margin-top: 2rem;
-  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-right: 6rem;
   display: flex;
   justify-content: center;
 }
@@ -19,7 +19,7 @@ li.list_style > a {
 .background_colour {
   display: flex;
   flex-direction: column;
-  background-color: #383838;
+  background-color: #facc9a;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -28,15 +28,15 @@ li.list_style > a {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #383838;
+  background-color: #facc9a;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 .side-bar-footer {
   list-style: none;
-  margin-top: 2rem;
-  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-right: 6rem;
   display: flex;
   justify-content: center;
 }

@@ -1,18 +1,37 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
-      <div className="intro">
-        <h1>Hi</h1>
-        <h1>My name is Fatima</h1>
-        <h1>A Full Stack Developer</h1>
-        <div style={{ color: "black", fontSize: "1rem" }}>
-          <h4>
-            Welcome to my personal page which is currently under development.
-            Check back soon
-          </h4>
-        </div>
+      <h1
+        style={{
+          marginTop: "15rem",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        Hi, I am Fatima, a Full Stack Developer{" "}
+      </h1>
+      <div
+        style={{
+          marginTop: "2rem",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="button"
+      >
+        <button style={{ marginRight: "1rem" }} className="tags">
+          {" "}
+          <Link to="/about">About Me</Link>
+        </button>
+        <button className="tags">
+          {" "}
+          <Link to="/projects">Projects</Link>
+        </button>
       </div>
     </div>
   );

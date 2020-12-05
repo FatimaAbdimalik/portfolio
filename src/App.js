@@ -12,7 +12,7 @@ import SideBar from "./components/SideBar/SideBar.js";
 import Footer from "./components/Footer/Footer.js";
 
 function App() {
-  const baseUrl = "http://localhost:3200";
+  // const baseUrl = "http://localhost:3200";
   return (
     <div className="App">
       <div className="position">
@@ -37,15 +37,15 @@ function App() {
                         <Route path="/about">
                           <About />
                         </Route>
-                        <Route path="/skills">
+                        {/* <Route path="/skills">
                           <Skills />
-                        </Route>
+                        </Route> */}
                         <Route path="/projects">
                           <Projects />
                         </Route>
-                        <Route path="/contact">
+                        {/* <Route path="/contact">
                           <Contact baseUrl={baseUrl} />
-                        </Route>
+                        </Route> */}
                       </Switch>
                     </div>
                   </CSSTransition>

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
 .intro {
   margin-top: 5rem;
-  margin-left: 12rem;
+  margin-left: 15rem;
 }
 
 .intro_border {
@@ -27,17 +27,14 @@
 }
 
 body {
-  background-color: #484848;
-  color: white;
+  background-image: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #f69d3c);
+  color: black;
   height: 100%;
 }
 
 h1 {
   font-family: "Sansita Swashed", cursive;
   font-size: 3rem;
-}
-.side-by-side {
-  display: flex;
 }
 
 p {
@@ -76,4 +73,13 @@ h2 {
 h4 {
   font-family: "Chilanka", cursive;
   font-weight: bold;
+}
+
+.tags > a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.button > button {
+  background-color: #f69d3c;
 }
