@@ -20,13 +20,23 @@ const ProjectCards = ({ data }) => {
                 <Card.Body
                   style={{ color: "black", boxShadow: "5px 5px 5px 3px" }}
                 >
-                  <Card.Title>{cardDetails.name}</Card.Title>
-                  <Card.Text>
-                    <h2> {cardDetails.intro} </h2>
-                    <Card.Img variant="top" src={cardDetails.image} />
+                  <div style={{ height: "8rem" }}>
+                    <Card.Title>{cardDetails.name}</Card.Title>
+                    <Card.Text>
+                      <h2> {cardDetails.intro} </h2>
+                    </Card.Text>
+                  </div>
+                  <Card.Img variant="top" src={cardDetails.image} />
+                  <div style={{ height: "100px", margin: "10px 0 5px 3px" }}>
                     {cardDetails.techStack}
-                  </Card.Text>
-                  <div style={{ display: "flex", alignItems: "flex-end" }}>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      justifyContent: "space-around",
+                    }}
+                  >
                     <Card.Link
                       href={cardDetails.code}
                       target="_blank"
