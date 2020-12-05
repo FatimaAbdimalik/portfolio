@@ -19,7 +19,7 @@ li.list_style > a {
 .background_colour {
   display: flex;
   flex-direction: column;
-  background-color: #facc9a;
+  background-color: #b38728;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -28,7 +28,7 @@ li.list_style > a {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #facc9a;
+  background-color: #b38728;
   position: fixed;
   bottom: 0;
   width: 100%;

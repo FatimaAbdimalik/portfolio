@@ -27,7 +27,7 @@
 }
 
 body {
-  background-image: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #f69d3c);
+  background-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728);
   color: black;
   height: 100%;
 }
@@ -81,5 +81,5 @@ h4 {
 }
 
 .button > button {
-  background-color: #f69d3c;
+  background-color: #b38728;
 }
