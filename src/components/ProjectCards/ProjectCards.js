@@ -35,12 +35,20 @@ const ProjectCards = ({ data }) => {
                       display: "flex",
                       alignItems: "flex-end",
                       justifyContent: "space-around",
+                      // padding: "2px 2px 2px 2px",
+                      // backgroundColor: "#3cb371",
+                      // color: "black",
                     }}
                   >
                     <Card.Link
                       href={cardDetails.code}
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{
+                        padding: "5px 5px 5px 5px",
+                        backgroundColor: "#3cb371",
+                        color: "black",
+                      }}
                     >
                       Code
                     </Card.Link>
@@ -48,6 +56,11 @@ const ProjectCards = ({ data }) => {
                       href={cardDetails.live}
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{
+                        padding: "5px 5px 5px 5px",
+                        backgroundColor: "#3cb371",
+                        color: "black",
+                      }}
                     >
                       Live app
                     </Card.Link>

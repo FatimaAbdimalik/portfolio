@@ -19,9 +19,8 @@ li.list_style > a {
 .background_colour {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.058823529411764705);
+  background-color: #d5abb2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -30,7 +29,7 @@ li.list_style > a {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.058823529411764705);
+  background-color: #d5abb2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: fixed;
   bottom: 0;
