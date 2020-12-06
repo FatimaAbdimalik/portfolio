@@ -13,7 +13,17 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        Hi, I am Fatima, a Full Stack Developer{" "}
+        Hi, I am Fatima,{" "}
+      </h1>
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        Your Next Junior Software Engineer
       </h1>
       <div
         style={{

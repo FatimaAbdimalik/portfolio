@@ -13,4 +13,6 @@
 
 .text {
   font-size: 13px;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }

@@ -17,12 +17,11 @@ const About = () => {
   return (
     <div>
       <div>
-        <div className="intro">
-          <div className="side-by-side">
-            <div>
-              <h1>About Me</h1>
-            </div>
-            {/* <Button
+        <div>
+          <div>
+            <h1 className="intro">About Me</h1>
+          </div>
+          {/* <Button
                 variant="secondary"
                 onClick={handleShow}
                 style={{
@@ -82,18 +81,22 @@ const About = () => {
                   </Modal.Footer>
                 </div>
               </Modal> */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <img
               src={photo}
               alt=""
-              style={{
-                width: "10%",
-                height: "18%",
-                marginLeft: "20rem",
-                border: "0.5rem solid #3cb371 ",
-              }}
+              // style={{
+              //   width: "10%",
+              //   height: "18%",
+              //   // marginLeft: "30rem",
+              //   border: "0.5rem solid #3cb371 ",
+              // }}
+              className="photo"
             />
+          </div>
+          <div className="centred-text">
             <p>Hi I am Fatima,</p>
-            <div style={{ marginBottom: "1rem" }}>
+            <div style={{ marginBottom: "1rem" }} className="responsive-text">
               Please click
               <a
                 href="https://drive.google.com/file/d/1EgSbDKGwFkMA75xhJP1zqyU-Q5B1HDZZ/view"
