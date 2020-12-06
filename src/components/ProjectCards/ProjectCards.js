@@ -4,7 +4,9 @@ import { Card } from "react-bootstrap";
 const ProjectCards = ({ data }) => {
   console.log(data);
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div
+      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+    >
       {data
         ? data.map((cardDetails, key) => {
             return (

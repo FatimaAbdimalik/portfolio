@@ -8,6 +8,7 @@ import Portfolio from "./../../images/Portfolio.png";
 import QuoteGenerator from "./../../images/QuoteGenerator.png";
 import Todo from "./../../images/Todo.png";
 import TVShow from "./../../images/TVShow.png";
+import "../About/About.css";
 
 const Projects = () => {
   const data = [
