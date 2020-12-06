@@ -1,4 +1,16 @@
+.title {
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+
 .centred-text {
+  font-size: 1.5rem;
+  margin: 3rem 7rem 0rem 7rem;
+  text-align: start;
+}
+
+.responsive-text {
+  margin-top: 1rem;
   text-align: center;
 }
 .photo {
@@ -9,13 +21,21 @@
 }
 
 @media (max-width: 720px) {
-  .responsive-text {
+  .centred-text {
+    font-size: 1rem;
+    margin: 2rem 1rem 0rem 1rem;
     text-align: left;
   }
 
   .photo {
-    width: 20%;
-    height: 36%;
+    width: 25%;
+    height: 41%;
     border: 0.5rem solid #3cb371;
+  }
+  .title {
+    margin-top: 7rem;
+    margin-left: 0;
+    text-align: center;
+    font-size: 2rem;
   }
 }

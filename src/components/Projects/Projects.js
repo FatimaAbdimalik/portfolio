@@ -80,7 +80,7 @@ const Projects = () => {
   ];
   return (
     <div>
-      <div className="intro">
+      <div className="title">
         <h1>Projects</h1>
       </div>
       <ProjectCards data={data} />

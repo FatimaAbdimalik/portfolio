@@ -6,6 +6,19 @@
   margin-left: 15rem;
 }
 
+.main-title {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .intro_border {
   border: 2px solid white;
   padding: 5px 5px;
@@ -84,4 +97,13 @@ h4 {
 .button > button {
   background-color: #3cb371;
   padding: "5px 5px 5px 5px";
+}
+
+@media (max-width: 720px) {
+  .main-title {
+    font-size: 2rem;
+  }
+  .second-title {
+    font-size: 1.5rem;
+  }
 }

@@ -5,26 +5,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <h1
-        style={{
-          marginTop: "15rem",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        Hi, I am Fatima,{" "}
-      </h1>
-      <h1
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {" "}
-        Your Next Junior Software Engineer
-      </h1>
+      <h1 className="main-title">Hi, I am Fatima, </h1>
+      <h1 className="second-title"> Your Next Junior Software Engineer</h1>
       <div
         style={{
           marginTop: "2rem",

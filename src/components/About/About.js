@@ -2,112 +2,35 @@ import React from "react";
 import "../Home/Home.css";
 import "./About.css";
 import photo from "./../../images/photo.png";
-// import { Button, Modal } from "react-bootstrap";
 
 const About = () => {
-  // const [show, setShow] = useState(false);
-
-  // const handleClose = () => {
-  //   return setShow(false);
-  // };
-  // const handleShow = () => {
-  //   return setShow(true);
-  // };
-
   return (
     <div>
       <div>
         <div>
           <div>
-            <h1 className="intro">About Me</h1>
+            <h1 className="title">About Me</h1>
           </div>
-          {/* <Button
-                variant="secondary"
-                onClick={handleShow}
-                style={{
-                  backgroundColor: "black",
-                  marginTop: "1rem",
-                  marginBottom: "1rem",
-                }}
-              >
-                Resume{" "}
-              </Button>
-              <Modal
-                show={show}
-                onHide={handleClose}
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-              >
-                <div className="background">
-                  <Modal.Header closeButton>
-                    <Modal.Title>Employment/Work Experience</Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <div className="timeline">
-                      <div className="container left">
-                        <div className="resume_container">
-                          <h2>Feb 2020 - Oct 2020</h2>
-                          <p>Software Trainee at CYF.</p>
-                        </div>
-                      </div>
-                      <div className="container right">
-                        <div className="resume_container">
-                          <h2>Mar 2020 - July 2020</h2>
-                          <p>Software Developer at Tech Returners</p>
-                        </div>
-                      </div>
-                      <div className="container left">
-                        <div className="resume_container">
-                          <h2>Aug 2018 - Present</h2>
-                          <p>Private Tutor.</p>
-                        </div>
-                      </div>
-                      <div className="container right">
-                        <div className="resume_container">
-                          <h2>Sep 2015 - July 2020</h2>
-                          <p>Teaching Assistant</p>
-                        </div>
-                      </div>
-                    </div>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button
-                      variant="secondary"
-                      onClick={handleClose}
-                      style={{ backgroundColor: "black" }}
-                    >
-                      Close
-                    </Button>
-                  </Modal.Footer>
-                </div>
-              </Modal> */}
+
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img
-              src={photo}
-              alt=""
-              // style={{
-              //   width: "10%",
-              //   height: "18%",
-              //   // marginLeft: "30rem",
-              //   border: "0.5rem solid #3cb371 ",
-              // }}
-              className="photo"
-            />
+            <img src={photo} alt="" className="photo" />
+          </div>
+          <div className="responsive-text">
+            <p>
+              Hi I am <b>Fatima</b>
+            </p>
+            Please click
+            <a
+              href="https://drive.google.com/file/d/1EgSbDKGwFkMA75xhJP1zqyU-Q5B1HDZZ/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              HERE
+            </a>{" "}
+            to find my CV
           </div>
           <div className="centred-text">
-            <p>Hi I am Fatima,</p>
-            <div style={{ marginBottom: "1rem" }} className="responsive-text">
-              Please click
-              <a
-                href="https://drive.google.com/file/d/1EgSbDKGwFkMA75xhJP1zqyU-Q5B1HDZZ/view"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                HERE
-              </a>{" "}
-              to find my CV
-            </div>
             <p>
               Welcome to my personal page! Here I will reveal a little more
               about myself, and my journey into tech.
