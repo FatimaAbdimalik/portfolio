@@ -36,8 +36,18 @@ const About = () => {
               about myself, and my journey into tech.
             </p>
             <p>
-              I have been coding regularly since March this year. Prior to that,
-              I spent more time tutoring, volunteering and blogging.
+              I have been coding regularly since March this year. For the last
+              nine months, I learnt the fundamentals of programming including
+              <strong> HTML, CSS, and Bootstrap</strong> . I have strengthened
+              my understanding of <strong> JavaScript </strong> and utilised{" "}
+              <strong>ReactJs </strong> to create simple applications. I have
+              also learnt and utilised many backend technologies such as{" "}
+              <strong>PostgreSQL and MySQL and Node.js</strong>
+            </p>
+            <p>
+              {" "}
+              Prior to that, I spent more time tutoring, volunteering and
+              blogging.
             </p>
             <p>
               I loved teaching, and almost two years ago, I believed that I will

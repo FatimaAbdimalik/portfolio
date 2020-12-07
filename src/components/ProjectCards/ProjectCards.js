@@ -29,6 +29,10 @@ const ProjectCards = ({ data }) => {
                     </Card.Text>
                   </div>
                   <Card.Img variant="top" src={cardDetails.image} />
+                  <div style={{ fontWeight: "bold", marginTop: "1rem" }}>
+                    {" "}
+                    technologies used:
+                  </div>
                   <div style={{ height: "100px", margin: "10px 0 5px 3px" }}>
                     {cardDetails.techStack}
                   </div>
@@ -48,7 +52,7 @@ const ProjectCards = ({ data }) => {
                       rel="noopener noreferrer"
                       style={{
                         padding: "5px 5px 5px 5px",
-                        backgroundColor: "#3cb371",
+                        backgroundColor: "rgba(3, 155, 155)",
                         color: "black",
                       }}
                     >
@@ -60,7 +64,7 @@ const ProjectCards = ({ data }) => {
                       rel="noopener noreferrer"
                       style={{
                         padding: "5px 5px 5px 5px",
-                        backgroundColor: "#3cb371",
+                        backgroundColor: "rgba(3, 155, 155)",
                         color: "black",
                       }}
                     >

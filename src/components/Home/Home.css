@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Piedra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
 .intro {
   margin-top: 5rem;
   margin-left: 15rem;
@@ -11,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .second-title {
@@ -18,7 +20,14 @@
   justify-content: center;
   align-items: center;
 }
-
+.tech {
+  color: #000080;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
 .intro_border {
   border: 2px solid white;
   padding: 5px 5px;
@@ -47,7 +56,7 @@ body {
 }
 
 h1 {
-  font-family: "Sansita Swashed", cursive;
+  font-family: "Nerko One", cursive;
   font-size: 3rem;
 }
 
@@ -95,15 +104,27 @@ h4 {
 }
 
 .button > button {
-  background-color: #3cb371;
-  padding: "5px 5px 5px 5px";
+  background-color: rgba(3, 155, 155);
+  /* padding: "5px 5px 5px 5px"; */
+  border-radius: 2rem;
+  padding: 0.7rem;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 720px) {
   .main-title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .second-title {
     font-size: 1.5rem;
+  }
+  .tech {
+    font-size: 0.9rem;
+  }
+
+  .button > button {
+    border-radius: 1rem;
+    padding: 0.2rem;
+    letter-spacing: 1px;
   }
 }

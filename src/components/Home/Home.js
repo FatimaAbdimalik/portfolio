@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <h1 className="main-title">Hi, I am Fatima, </h1>
+      <h1 className="main-title">Hi, I am Fatima</h1>
       <h1 className="second-title"> Your Next Junior Software Engineer</h1>
+      <p className="tech">HTML, CSS, JavaScript, React, Node.js </p>
       <div
         style={{
           marginTop: "2rem",
@@ -16,7 +17,7 @@ const Home = () => {
         }}
         className="button"
       >
-        <button style={{ marginRight: "1rem" }} className="tags">
+        <button style={{ marginRight: "1rem" }} className="tags" variant="info">
           {" "}
           <Link to="/about">About Me</Link>
         </button>

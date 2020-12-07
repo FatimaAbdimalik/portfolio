@@ -43,7 +43,7 @@ const Projects = () => {
     {
       name: "Grokit",
       intro:
-        "An application that aims to consolidate learning and improve skills by combatting the concept of forgeeting curver",
+        "An application that aims to consolidate learning and improve skills for a potential user by combatting the concept of forgetting curve",
       image: Grokit,
       techStack:
         "ReactJs, moment, React Bootstrap, react-router, AWS Serverless Lambda, AWS Cognito, MySQL,axios",
@@ -53,7 +53,7 @@ const Projects = () => {
     {
       name: "TV-show",
       intro:
-        "An applications that allow users to find a show, an episode of a show and provides a summary for each show",
+        "An application that allow users to find a show and an episode of a show interchangeably. The app also provides a summary for a each choosen episode",
       image: TVShow,
       techStack: "HTML, CSS, JavaScript",
       live: "https://fatimaabdimalik-tv-show.netlify.app/",
