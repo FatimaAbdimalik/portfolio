@@ -42,7 +42,7 @@ const About = () => {
               my understanding of <strong> JavaScript </strong> and utilised{" "}
               <strong>ReactJs </strong> to create simple applications. I have
               also learnt and utilised many backend technologies such as{" "}
-              <strong>PostgreSQL and MySQL and Node.js</strong>
+              <strong>PostgreSQL, MySQL and Node.js</strong>
             </p>
             <p>
               {" "}
