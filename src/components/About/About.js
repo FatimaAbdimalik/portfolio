@@ -106,7 +106,7 @@ const About = () => {
               my first tech role.
             </p>
             <p>
-              Currently, I am looking for a position as a
+              Currently, I am looking for a position as a{" "}
               <b>Junior Software Engineer </b>and keen to work within a business
               that is <b>principled </b>, has a <b>mission</b>, and cares about{" "}
               <b>societies' needs </b>.
