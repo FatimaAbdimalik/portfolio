@@ -20,7 +20,10 @@ const ProjectCards = ({ data }) => {
                 key={key}
               >
                 <Card.Body
-                  style={{ color: "black", boxShadow: "5px 5px 5px 3px" }}
+                  style={{
+                    color: "black",
+                    boxShadow: "rgba(0, 0, 0, 0.2) 0px 4px 4px 0px",
+                  }}
                 >
                   <div style={{ height: "8rem" }}>
                     <Card.Title>{cardDetails.name}</Card.Title>
